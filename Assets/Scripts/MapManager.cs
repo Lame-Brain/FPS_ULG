@@ -33,7 +33,7 @@ public class MapManager : MonoBehaviour
             for (y = 0; y < line.Length; y++) //Ground Layer
             {
                 cell = line[y].Split(',');
-                for (x = 0; x < cell.Length-1; x++)
+                for (x = 0; x < cell.Length; x++)
                 {
                     int bleh;
                     bool success = int.TryParse(cell[x], out bleh);
@@ -45,7 +45,7 @@ public class MapManager : MonoBehaviour
         //Build Level
         z = 0;//for (z = 0; z < mapTileValue.GetLength(2); z++)
         {            
-            for(y = 0; y < mapTileValue.GetLength(1); y++)
+            for(y = 0; y < mapTileValue.GetLength(1)-1; y++)
             {
                 for (x = 0; x < mapTileValue.GetLength(0); x++)
                 {
@@ -68,7 +68,9 @@ public class MapManager : MonoBehaviour
         if (mapTileValue[x, y, z] < 5 || mapTileValue[x, y, z] == 22 || mapTileValue[x, y, z] == 23 || mapTileValue[x, y, z] == 24 || mapTileValue[x, y, z] == 49 || mapTileValue[x, y, z] == 50 || mapTileValue[x, y, z] == 51)
         {
             go = Building.BLOCKS.FindPrefab("Floor");
-            mapTileInstance[x, y, z] = Instantiate(go, new Vector3(x, 0, y), Quaternion.Euler(Vector3.right * -90f));
+            mapTileInstance[x, y, z] = Instantiate(go, new Vector3(x, 0, -y), Quaternion.Euler(Vector3.right * -90f));
+            mapTileInstance[x, y, z].tag = "BuildingBlock";
+            mapTileInstance[x, y, z].name = "FloorTile _" + x + "_" + y + "_" + z;
             if (mapTileValue[x, y, z] == 0) mapTileInstance[x, y, z].GetComponent<MeshRenderer>().material = Building.BLOCKS.FindMat("Black");
             if (mapTileValue[x, y, z] == 1) mapTileInstance[x, y, z].GetComponent<MeshRenderer>().material = Building.BLOCKS.FindMat("Grass");
             if (mapTileValue[x, y, z] == 2) mapTileInstance[x, y, z].GetComponent<MeshRenderer>().material = Building.BLOCKS.FindMat("Brown");
@@ -80,12 +82,6 @@ public class MapManager : MonoBehaviour
             if (mapTileValue[x, y, z] == 49) mapTileInstance[x, y, z].GetComponent<MeshRenderer>().material = Building.BLOCKS.FindMat("Sand");
             if (mapTileValue[x, y, z] == 50) mapTileInstance[x, y, z].GetComponent<MeshRenderer>().material = Building.BLOCKS.FindMat("Checkerboard");
             if (mapTileValue[x, y, z] == 51) mapTileInstance[x, y, z].GetComponent<MeshRenderer>().material = Building.BLOCKS.FindMat("Brick");
-        }
-        if(mapTileValue[x,y,z] == 17)
-        {
-            go = Building.BLOCKS.FindPrefab("Floor");
-            mapTileInstance[x, y, z] = Instantiate(go, new Vector3(x, 0, y), Quaternion.Euler(Vector3.right * -90f));
-            mapTileInstance[x, y, z].GetComponent<MeshRenderer>().material = Building.BLOCKS.FindMat("Brick");
         }
     }
 }

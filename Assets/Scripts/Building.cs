@@ -35,7 +35,7 @@ public class Building : MonoBehaviour
         Material r = null;
         foreach (Material m in mat)
         {
-            if (m.name == name) { r = m; Debug.Log(m.name); }
+            if (m.name == name) r = m; 
         }
         return r;
     }
