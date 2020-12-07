@@ -218,6 +218,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shop
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f4349f2cdff2fdb4aa9cc27c131b1569,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4349f2cdff2fdb4aa9cc27c131b1569, type: 3}
 --- !u!1001 &189695108
@@ -301,6 +306,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cave
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d3879fd1346ec264398ccbaf8544beb7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3879fd1346ec264398ccbaf8544beb7, type: 3}
@@ -484,6 +494,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 60d254e7e07d09c469ef358f76da8ab8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60d254e7e07d09c469ef358f76da8ab8, type: 3}
 --- !u!1001 &834866897
@@ -557,6 +572,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 36e083443e7bf704a9be949fddccc6d5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36e083443e7bf704a9be949fddccc6d5, type: 3}
@@ -636,6 +656,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Floor&Ceiling
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8146ba3b242ecec41853a221a613ba2e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8146ba3b242ecec41853a221a613ba2e, type: 3}
@@ -799,6 +824,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b019093a06204804ab661a8889b1f6c7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b019093a06204804ab661a8889b1f6c7, type: 3}
 --- !u!1001 &1237521973
@@ -878,6 +908,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low_Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 70c3bdc5b50f0894f80e36dd9439f2a0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70c3bdc5b50f0894f80e36dd9439f2a0, type: 3}
 --- !u!1001 &1337844936
@@ -951,6 +986,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eed301743be9bd749bcf25404a88a836,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eed301743be9bd749bcf25404a88a836, type: 3}
