@@ -234,9 +234,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GroundCSV: {fileID: 4900000, guid: bbb1e4c626d79dc48b685b4c8e3471e8, type: 3}
-  BlockingDecoCSV: {fileID: 4900000, guid: a7f4bcf6ab4e70a45bf6202e1138a0ba, type: 3}
-  NonBlockDecoCSV: {fileID: 4900000, guid: 6382ef656d5d5204d993cbe7400f6d07, type: 3}
-  InteractiveCSV: {fileID: 4900000, guid: 0cc45e8a2896f28458a7b4ace6177f28, type: 3}
+  Deco1CSV: {fileID: 4900000, guid: 43b9d78ceb78ebd4ebcdeb64faa5c3bb, type: 3}
+  Deco2CSV: {fileID: 4900000, guid: 3851aba1750d9db4fbb7597286348bb0, type: 3}
+  CeilingCSV: {fileID: 4900000, guid: 59703c88adcb1d042b973d4e5e4939de, type: 3}
+  BlockingCSV: {fileID: 4900000, guid: a99780dd7a5a67c42b364d807b56d313, type: 3}
+  InteractCSV: {fileID: 4900000, guid: fa2c91d66b18a8b46b4b060b737ea1a5, type: 3}
 --- !u!4 &316844416
 Transform:
   m_ObjectHideFlags: 0
