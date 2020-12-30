@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8967009819651943958}
   - component: {fileID: 149340232127750861}
   m_Layer: 0
-  m_Name: 045_Castle
+  m_Name: Castle
   m_TagString: level
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 2764123346540504338}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0

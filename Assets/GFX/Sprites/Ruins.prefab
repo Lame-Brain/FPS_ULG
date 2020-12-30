@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 573483587650977966}
   - component: {fileID: 4129626021548675576}
   m_Layer: 0
-  m_Name: 047_Ruins
+  m_Name: Ruins
   m_TagString: level
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 4451531743030480052}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
