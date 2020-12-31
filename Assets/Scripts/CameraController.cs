@@ -93,14 +93,14 @@ public class CameraController : MonoBehaviour
         if (map.blockMap[px + mx, py + my] == 6 && !fly) result = false; //Indoors
 
         //Check for Characters
-        if(map.toonMap[px+mx, py+my] > -1) //ran into a toon
+        if (map.toonMap[px + mx, py + my] > -1) //ran into a toon
         {
             result = true; //block movement
             //TODO: need a way to identify who player just bumped into and send that instance relevant data.
         }
 
         //Check for scripts
-        if (map.scriptMap[px + py, px + my] > -1)
+        if (map.scriptMap[px + mx, px + my] > -1)
         {
             //TODO: need a way to call scripts and play them here.
             Debug.Log("You play script #" + map.scriptMap[px + py, px + my]);
