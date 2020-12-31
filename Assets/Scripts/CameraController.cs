@@ -97,6 +97,7 @@ public class CameraController : MonoBehaviour
         {
             result = true; //block movement
             //TODO: need a way to identify who player just bumped into and send that instance relevant data.
+            Debug.Log("You run into Toon #" + map.toonMap[px + mx, py + my]);
         }
 
         //Check for scripts

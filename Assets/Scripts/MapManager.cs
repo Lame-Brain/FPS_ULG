@@ -55,16 +55,16 @@ public class MapManager : MonoBehaviour
             string[] column5 = row5[y].Split(new char[] { ',' });
             string[] column6 = row6[y].Split(new char[] { ',' });
             string[] column7 = row7[y].Split(new char[] { ',' });
-            string[] column8 = row6[y].Split(new char[] { ',' });
-            string[] column9 = row7[y].Split(new char[] { ',' });
+            string[] column8 = row8[y].Split(new char[] { ',' });
+            string[] column9 = row9[y].Split(new char[] { ',' });
             for (int x = 0; x < mapWidth; x++)
             {
                 int.TryParse(column1[x], out groundMap[x, y]);
                 int.TryParse(column2[x], out f1Map[x, y]);
                 int.TryParse(column3[x], out f2Map[x, y]);
-                int.TryParse(column4[x], out f4Map[x, y]);
-                int.TryParse(column5[x], out f5Map[x, y]);
-                int.TryParse(column6[x], out f3Map[x, y]);
+                int.TryParse(column4[x], out f3Map[x, y]);
+                int.TryParse(column5[x], out f4Map[x, y]);
+                int.TryParse(column6[x], out f5Map[x, y]);
                 int.TryParse(column7[x], out blockMap[x, y]);
                 int.TryParse(column8[x], out toonMap[x, y]);
                 int.TryParse(column9[x], out scriptMap[x, y]);
