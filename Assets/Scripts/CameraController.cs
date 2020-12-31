@@ -100,10 +100,10 @@ public class CameraController : MonoBehaviour
         }
 
         //Check for scripts
-        if (map.scriptMap[px + mx, px + my] > -1)
+        if (map.scriptMap[px + mx, py + my] > -1)
         {
             //TODO: need a way to call scripts and play them here.
-            Debug.Log("You play script #" + map.scriptMap[px + py, px + my]);
+            Debug.Log("You play script #" + map.scriptMap[px + mx, py + my]);
         }
 
         return result;
