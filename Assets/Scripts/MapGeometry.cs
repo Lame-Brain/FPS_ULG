@@ -8,7 +8,7 @@ public class MapGeometry : MonoBehaviour
 
     public GameObject[] model;
     public Material[] texture;
-    public GameObject[] deco, toon;
+    public GameObject[] deco;
 
     void Awake()
     {
@@ -38,13 +38,6 @@ public class MapGeometry : MonoBehaviour
     {
         GameObject target = null;
         foreach (GameObject go in deco) if (go.name == s) target = go;
-        return target;
-    }
-
-    public GameObject GetToon(string s)
-    {
-        GameObject target = null;
-        foreach (GameObject go in toon) if (go.name == s) target = go;
         return target;
     }
 }

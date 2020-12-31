@@ -152,7 +152,7 @@ Transform:
   - {fileID: 963194228}
   - {fileID: 1104856059}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &232807059
 MonoBehaviour:
@@ -356,7 +356,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!114 &1036026850
 MonoBehaviour:
@@ -445,43 +445,6 @@ MonoBehaviour:
   - {fileID: 4547508836505449363, guid: 5b4d2b3ee6691e64abeaa748348b4e74, type: 3}
   - {fileID: 5298498794218141328, guid: 2606c69cfc036d64e8bed6152048bcea, type: 3}
   - {fileID: 7433514879208618651, guid: 0ce2bcea39c736b4eaebf897038700f4, type: 3}
-  toon:
-  - {fileID: 2106431060497389662, guid: 832c3fbef31c0d84e8067360ad3490e1, type: 3}
-  - {fileID: 3177154218121377717, guid: a25decfd8cad10d48bc7d2f76aff89ff, type: 3}
-  - {fileID: 2582087902364014654, guid: eeadf302e2a31e743ae75ed8c28903f0, type: 3}
-  - {fileID: 8508039253790185850, guid: 1e895dc5775cd3b43aea531ac0f7c99f, type: 3}
-  - {fileID: 2451788464593494293, guid: cbfb2264a133ec744bb256df2350395a, type: 3}
-  - {fileID: 476700852669740260, guid: 88734f20e3c3ced4499f666267871161, type: 3}
-  - {fileID: 2260702673137764708, guid: f7c876a92b586194fac85f9c6fcc6e45, type: 3}
-  - {fileID: 3373615568327761113, guid: 2467e9735ef2a9640acceb92bc1bb18e, type: 3}
-  - {fileID: 6725922298478899494, guid: 9fda140f42e21e44285f5997a17ff864, type: 3}
-  - {fileID: 4350038211189167249, guid: 179014f91317d284385393c4966f2026, type: 3}
-  - {fileID: 7526020733138878878, guid: a6f5135c5d1930d46a8bcbba0d9f4edd, type: 3}
-  - {fileID: 5353024656903517326, guid: f3e8442c17bac524c9247a30d2e4190b, type: 3}
-  - {fileID: 7442830455002709052, guid: f63b6b56a5b06c941aa2d611429c063f, type: 3}
-  - {fileID: 7644110855049417446, guid: 6ec5bbf273a2a9d4e904583777e8b2a7, type: 3}
-  - {fileID: 8673273352465662606, guid: 46d57428536bd3a4aa6dcd42f6e4e8cc, type: 3}
-  - {fileID: 4216560174342322334, guid: 05f073855e21cce438f5f23d5e03293b, type: 3}
-  - {fileID: 3107944072860696851, guid: 5c954666e80d6da4696c289271a3b322, type: 3}
-  - {fileID: 905621239720618331, guid: 8292eff86d2723b41868f9a92a918ef6, type: 3}
-  - {fileID: 6952183830486871106, guid: d8a54f78acab8d84e880db14cf40a0a7, type: 3}
-  - {fileID: 8037401194034086233, guid: ef88de9f3c409c7409017640502fa29e, type: 3}
-  - {fileID: 524586084496114345, guid: dff8ea9f3495dd74ca29d0bf66cf135b, type: 3}
-  - {fileID: 8534501809984401421, guid: 9edf30d4681061b45964c806efde2d7a, type: 3}
-  - {fileID: 6398143416564542724, guid: 2ed73d8a5a89f574db8ab3dd6766caa8, type: 3}
-  - {fileID: 121566417165613111, guid: dd986b7c8592a1046a9f0e0aeb978e1f, type: 3}
-  - {fileID: 6159840765832888003, guid: 18c5d95e014821a4fa1cf7e48717c8ff, type: 3}
-  - {fileID: 5824859457812323989, guid: 07007ca1185feab4e98028facace5fd1, type: 3}
-  - {fileID: 7293296445768540096, guid: 4a63145c0af9c3a44894a672e18aab05, type: 3}
-  - {fileID: 5051494152259846761, guid: 6359800ee93369d48981706c559f17e8, type: 3}
-  - {fileID: 4261154176180783253, guid: 08e9a6bfa33c6224f95b5eb53c981052, type: 3}
-  - {fileID: 2766592096194784576, guid: 067a8da8f8017214b8a0480372a17038, type: 3}
-  - {fileID: 9000712517994926656, guid: abc9ed112cb390a4b864755663e1e25d, type: 3}
-  - {fileID: 3151149320898893223, guid: fd5f150af88c59249a776c4ec14c10ba, type: 3}
-  - {fileID: 8636101099026815767, guid: f1a196e1174d8ef4f804e640243d9275, type: 3}
-  - {fileID: 2752912847014465590, guid: 530963f511000cb47b42f2e6d9651e4d, type: 3}
-  - {fileID: 4111961736843662085, guid: 007037c6c1e8f66489b256a4a1c57a1b, type: 3}
-  - {fileID: 8529542827109715963, guid: af3b0b2035c9c854eab35e94f5f57888, type: 3}
 --- !u!4 &1036026851
 Transform:
   m_ObjectHideFlags: 0
@@ -642,3 +605,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2068956434
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2068956435}
+  - component: {fileID: 2068956436}
+  m_Layer: 0
+  m_Name: ToonPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2068956435
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068956434}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.450169, y: 0.06880827, z: -3.4839785}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2068956436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068956434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ead64569f0aad94190219304134fbe5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toon:
+  - {fileID: 2452019016977029310, guid: 15f41815ee26f8444a8c07c07961f251, type: 3}

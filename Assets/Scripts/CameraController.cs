@@ -93,11 +93,11 @@ public class CameraController : MonoBehaviour
         if (map.blockMap[px + mx, py + my] == 6 && !fly) result = false; //Indoors
 
         //Check for Characters
-        if (map.toonMap[px + mx, py + my] > -1) //ran into a toon
+        if (map.toonMap[px + mx, py + my] != null) //ran into a toon
         {
             result = true; //block movement
-            //TODO: need a way to identify who player just bumped into and send that instance relevant data.
-            Debug.Log("You run into Toon #" + map.toonMap[px + mx, py + my]);
+            map.toonMap[px + mx, py + my].GetComponent<NPC>().Bump();
+            Debug.Log("You run into Toon #" + map.toonIDMap[px + mx, py + my]);
         }
 
         //Check for scripts

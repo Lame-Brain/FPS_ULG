@@ -6,7 +6,10 @@ public class MapManager : MonoBehaviour
 {
     public TextAsset groundCSV, floor1CSV, floor2CSV, floor3CSV, floor4CSV, floor5CSV, blockingCSV, toonCSV, scriptCSV;
     public int mapWidth, mapLength;
-    public int[,] groundMap, f1Map, f2Map, f3Map, f4Map, f5Map, blockMap, toonMap, scriptMap;
+    public int[,] groundMap, f1Map, f2Map, f3Map, f4Map, f5Map, blockMap, toonIDMap, scriptMap;
+    public GameObject[,] toonMap;
+
+    private bool ToonsSpawned = false;
 
     // Start is called before the first frame update
     void Start()
@@ -18,8 +21,9 @@ public class MapManager : MonoBehaviour
         f4Map = new int[mapWidth, mapLength];
         f5Map = new int[mapWidth, mapLength];
         blockMap = new int[mapWidth, mapLength];
-        toonMap = new int[mapWidth, mapLength];
+        toonIDMap = new int[mapWidth, mapLength];
         scriptMap = new int[mapWidth, mapLength];
+        toonMap = new GameObject[mapWidth, mapLength];
 
         LoadLevel();
     }
@@ -66,7 +70,7 @@ public class MapManager : MonoBehaviour
                 int.TryParse(column5[x], out f4Map[x, y]);
                 int.TryParse(column6[x], out f5Map[x, y]);
                 int.TryParse(column7[x], out blockMap[x, y]);
-                int.TryParse(column8[x], out toonMap[x, y]);
+                int.TryParse(column8[x], out toonIDMap[x, y]);
                 int.TryParse(column9[x], out scriptMap[x, y]);
             }
         }
@@ -90,9 +94,12 @@ public class MapManager : MonoBehaviour
         {
             for (int x = 0; x < mapWidth; x++)
             {
-                Toon(toonMap[x, y], x, y, 0);
+                //if(!ToonsSpawned) Toon(toonIDMap[x, y], x, y, 0);
+                //if (ToonsSpawned) { }
+                Toon(toonIDMap[x, y], x, y, 0);
             }
         }
+        ToonsSpawned = true;
 
     }
 
@@ -296,6 +303,7 @@ public class MapManager : MonoBehaviour
 
     private void Toon(int input, int x, int y, int z)
     {
+        /*
         GameObject toon = null;
         if (input == 0) toon = Instantiate(MapGeometry.MAP.GetToon("Mage"), new Vector3(x, z, -y), Quaternion.identity);
         if (input == 1) toon = Instantiate(MapGeometry.MAP.GetToon("Bard"), new Vector3(x, z, -y), Quaternion.identity);
@@ -333,5 +341,7 @@ public class MapManager : MonoBehaviour
         if (input == 33) toon = Instantiate(MapGeometry.MAP.GetToon("Snake"), new Vector3(x, z, -y), Quaternion.identity);
         if (input == 34) toon = Instantiate(MapGeometry.MAP.GetToon("Troll"), new Vector3(x, z, -y), Quaternion.identity);
         if (input == 35) toon = Instantiate(MapGeometry.MAP.GetToon("Avatar"), new Vector3(x, z, -y), Quaternion.identity);
+        */
+        if (input == 36 && ToonPool.INSTANCE.ToonExists("Frid")) toonMap[x, y] = Instantiate(ToonPool.INSTANCE.GetToon("Frid"), new Vector3(x, z, -y), Quaternion.identity);        
     }
 }
