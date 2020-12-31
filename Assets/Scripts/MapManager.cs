@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class MapManager : MonoBehaviour
 {
-    public TextAsset groundCSV, floor1CSV, floor2CSV, floor3CSV, blockingCSV, toonCSV, scriptCSV;
-
-    private int mapWidth = 32, mapLength = 32;
-    private int[,] groundMap, f1Map, f2Map, f3Map, blockMap, toonMap, scriptMap;
+    public TextAsset groundCSV, floor1CSV, floor2CSV, floor3CSV, floor4CSV, floor5CSV, blockingCSV, toonCSV, scriptCSV;
+    public int mapWidth, mapLength;
+    public int[,] groundMap, f1Map, f2Map, f3Map, f4Map, f5Map, blockMap, toonMap, scriptMap;
 
     // Start is called before the first frame update
     void Start()
@@ -16,6 +15,8 @@ public class MapManager : MonoBehaviour
         f1Map = new int[mapWidth, mapLength];
         f2Map = new int[mapWidth, mapLength];
         f3Map = new int[mapWidth, mapLength];
+        f4Map = new int[mapWidth, mapLength];
+        f5Map = new int[mapWidth, mapLength];
         blockMap = new int[mapWidth, mapLength];
         toonMap = new int[mapWidth, mapLength];
         scriptMap = new int[mapWidth, mapLength];
@@ -40,9 +41,11 @@ public class MapManager : MonoBehaviour
         string[] row2 = floor1CSV.text.Split(new char[] { '\n' });
         string[] row3 = floor2CSV.text.Split(new char[] { '\n' });
         string[] row4 = floor3CSV.text.Split(new char[] { '\n' });
-        string[] row5 = blockingCSV.text.Split(new char[] { '\n' });
-        string[] row6 = toonCSV.text.Split(new char[] { '\n' });
-        string[] row7 = scriptCSV.text.Split(new char[] { '\n' });
+        string[] row5 = floor4CSV.text.Split(new char[] { '\n' });
+        string[] row6 = floor5CSV.text.Split(new char[] { '\n' });
+        string[] row7 = blockingCSV.text.Split(new char[] { '\n' });
+        string[] row8 = toonCSV.text.Split(new char[] { '\n' });
+        string[] row9 = scriptCSV.text.Split(new char[] { '\n' });
         for (int y = 0; y < mapLength; y++)
         {
             string[] column1 = row1[y].Split(new char[] { ',' });
@@ -52,15 +55,19 @@ public class MapManager : MonoBehaviour
             string[] column5 = row5[y].Split(new char[] { ',' });
             string[] column6 = row6[y].Split(new char[] { ',' });
             string[] column7 = row7[y].Split(new char[] { ',' });
+            string[] column8 = row6[y].Split(new char[] { ',' });
+            string[] column9 = row7[y].Split(new char[] { ',' });
             for (int x = 0; x < mapWidth; x++)
             {
                 int.TryParse(column1[x], out groundMap[x, y]);
                 int.TryParse(column2[x], out f1Map[x, y]);
                 int.TryParse(column3[x], out f2Map[x, y]);
-                int.TryParse(column4[x], out f3Map[x, y]);
-                int.TryParse(column5[x], out blockMap[x, y]);
-                int.TryParse(column6[x], out toonMap[x, y]);
-                int.TryParse(column7[x], out scriptMap[x, y]);
+                int.TryParse(column4[x], out f4Map[x, y]);
+                int.TryParse(column5[x], out f5Map[x, y]);
+                int.TryParse(column6[x], out f3Map[x, y]);
+                int.TryParse(column7[x], out blockMap[x, y]);
+                int.TryParse(column8[x], out toonMap[x, y]);
+                int.TryParse(column9[x], out scriptMap[x, y]);
             }
         }
 
@@ -73,6 +80,8 @@ public class MapManager : MonoBehaviour
                 Tile(f1Map[x, y], x, y, 0);
                 Tile(f2Map[x, y], x, y, 1);
                 Tile(f3Map[x, y], x, y, 2);
+                Tile(f4Map[x, y], x, y, 1);
+                Tile(f5Map[x, y], x, y, 2);
             }
         }
 
@@ -191,7 +200,7 @@ public class MapManager : MonoBehaviour
         }
         if (input == 16) //Boulder
         {
-            ground = Instantiate(MapGeometry.MAP.GetModel("Boulder"), new Vector3(x, z, -y), MapGeometry.MAP.GetModel("Boulder").transform.rotation);
+            ground = Instantiate(MapGeometry.MAP.GetModel("Boulder"), new Vector3(x, z - .19f, -y), MapGeometry.MAP.GetModel("Boulder").transform.rotation);
         }
         if (input == 17) //Chest
         {
@@ -248,6 +257,18 @@ public class MapManager : MonoBehaviour
         if (input == 38) //Skull
         {
             ground = Instantiate(MapGeometry.MAP.GetDeco("Skull"), new Vector3(x, z, -y), Quaternion.identity);
+        }
+        if (input == 39) //Mini tree for overworld maps
+        {
+            ground = Instantiate(MapGeometry.MAP.GetDeco("Small_Tree"), new Vector3(x, z, -y), Quaternion.identity);
+        }
+        if (input == 40) //Cactus
+        {
+            ground = Instantiate(MapGeometry.MAP.GetDeco("Large_Cactus"), new Vector3(x, z + .5f, -y), Quaternion.identity);
+        }
+        if (input == 41) //Mini cactus for overworld maps
+        {
+            ground = Instantiate(MapGeometry.MAP.GetDeco("Small_Cactus"), new Vector3(x, z, -y), Quaternion.identity);
         }
 
 
