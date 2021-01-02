@@ -121,7 +121,7 @@ MonoBehaviour:
   damage: 10
   defense: 10
   stationary: 0
-  walk: 0
+  walk: 1
   swim: 0
   boat: 0
   ship: 0

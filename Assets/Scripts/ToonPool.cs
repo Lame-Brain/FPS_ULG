@@ -4,19 +4,7 @@ using UnityEngine;
 
 public class ToonPool : MonoBehaviour
 {
-    public static ToonPool INSTANCE;
-
     public GameObject[] toon;
-
-    void Awake()
-    {
-        if (INSTANCE == null)
-        {
-            INSTANCE = this;
-            DontDestroyOnLoad(INSTANCE);
-        }
-        else Destroy(this);
-    }
 
     public GameObject GetToon(string s)
     {

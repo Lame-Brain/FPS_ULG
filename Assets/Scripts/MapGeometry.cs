@@ -4,21 +4,9 @@ using UnityEngine;
 
 public class MapGeometry : MonoBehaviour
 {
-    public static MapGeometry MAP;
-
     public GameObject[] model;
     public Material[] texture;
     public GameObject[] deco;
-
-    void Awake()
-    {
-        if (MAP == null)
-        {
-            MAP = this;
-            DontDestroyOnLoad(MAP);
-        }
-        else Destroy(this);
-    }
 
     public GameObject GetModel(string s)
     {

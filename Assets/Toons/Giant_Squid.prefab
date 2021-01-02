@@ -123,8 +123,8 @@ MonoBehaviour:
   stationary: 0
   walk: 0
   swim: 1
-  boat: 0
-  ship: 0
+  boat: 1
+  ship: 1
   fly: 0
   ai: 1
   speech: <Squelch>
